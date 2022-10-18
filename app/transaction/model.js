@@ -54,7 +54,8 @@ let transactionSchema = mongoose.Schema({
     hisotryUser : {
         name : {type : String, require : [true, 'nama player harus diisi ']},
         phoneNumber : {
-        type : String,
+        type : Number,
+        require : [true, "nama akun harus diisi"],
         maxLength : [13, "panjang nama harus antara 9 - 13 karakter"],
         minLength : [9, "panjang nama harus antara 9 - 13 karakter"]
         }
