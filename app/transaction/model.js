@@ -3,7 +3,7 @@ let transactionSchema = mongoose.Schema({
     historyVoucherTopup : {
         gameName : {type : String, require : [true, 'nama game harus diisi ']},
         category : {type : String, require : [true, 'kategori harus diisi ']},
-        thumbnial : {type : String},
+        thumbnail : {type : String},
         coinName : {type : String, require : [true, 'name koin harus diisi ']},
         coinQuantity : {type : String, require : [true, 'jumlah koin harus diisi ']},
         price : { type : Number}
