@@ -38,30 +38,30 @@
                   <input type="text" name="name" value="<%= bank.name %>" class="form-control" id="name" placeholder="Masukan nama pemilik" required>
                 </div>
                 <div class="form-group">
-                    <label for="nameBank">Nama Bank</label>
-                    <select class="form-control select2" style="width: 100%;" name="nameBank" required>
+                    <label for="bankName">Nama Bank</label>
+                    <select class="form-control select2" style="width: 100%;" name="bankName" required>
                         <option selected="selected">Pilih Bank</option>
                         <option value="BRI"
-                          <% if(bank.nameBank === "BRI") { %>
+                          <% if(bank.bankName === "BRI") { %>
                               selected
                           <% } %>
                           >BRI
                       </option>
                         <option value="Mandiri"
-                          <% if(bank.nameBank === "Mandiri") { %>
+                          <% if(bank.bankName === "Mandiri") { %>
                               selected
                           <% } %>
                           >Mandiri
                       </option>
                         <option value="BNI"
-                          <% if(bank.nameBank === "BNI") { %>
+                          <% if(bank.bankName === "BNI") { %>
                               selected
                           <% } %>
                           >BNI
                       </option>
                     </option>
                     <option value="BCA"
-                      <% if(bank.nameBank === "BCA") { %>
+                      <% if(bank.bankName === "BCA") { %>
                           selected
                       <% } %>
                       >BCA
