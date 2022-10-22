@@ -1,6 +1,7 @@
 const Player = require('./model')
 const Voucher = require('../voucher/model')
 
+
 module.exports = {
 
     landingPage : async(req, res) => {
