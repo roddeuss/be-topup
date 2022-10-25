@@ -20,7 +20,7 @@ let transactionSchema = mongoose.Schema({
         type : String,
         require : [true, 'nama harus diisi'],
         maxLength : [225, "panjang nama harus antara 3 - 225 karakter"],
-        minLength : [225, "panjang nama harus antara 3 - 225 karakter"]
+        minLength : [3, "panjang nama harus antara 3 - 225 karakter"]
     },
 
     accountUser : {
@@ -43,7 +43,7 @@ let transactionSchema = mongoose.Schema({
     status : {
         type : String,
         enum : ['pending', 'success', 'failed'],
-        default : 'pemnding'
+        default : 'pending'
     },
     
     player : {
@@ -51,7 +51,7 @@ let transactionSchema = mongoose.Schema({
         ref : 'Player'
     },
 
-    hisotryUser : {
+    historyUser : {
         name : {type : String, require : [true, 'nama player harus diisi ']},
         phoneNumber : {
         type : Number,
